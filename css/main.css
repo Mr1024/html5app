@@ -1,0 +1,45 @@
+@charset "utf-8";
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	background-color:#b6b6ba;
+	height:50px;
+	width:100%;
+}
+html,body{
+	height:100%;
+}
+body,div,p,h1,h2,h3,table,tr,td,ul,li,ol{
+	margin:0;
+	padding:0;
+}
+.mainbox{
+	display: -webkit-box;
+	display: box;
+	padding-top:50px;
+	min-height:100%;
+	box-sizing:border-box;
+}
+.pagebox{
+	-webkit-box-flex:1;
+	box-flex:1;
+	background-color:#f0f0f2;
+}
+
+.pagepreview{
+	width:450px;
+}
+.actionbox{
+	-webkit-box-flex:1;
+	box-flex:1;
+	background-color:#f0f0f2;
+}
+.phone >img {
+	width:320px;
+}
+.phonecon{
+	width:320px;
+	height:568px;
+	background-color:red;
+}
