@@ -1,45 +1,74 @@
 @charset "utf-8";
-header{
-	position: fixed;
-	top:0;
-	left:0;
-	background-color:#b6b6ba;
-	height:50px;
-	width:100%;
-}
-html,body{
-	height:100%;
-}
-body,div,p,h1,h2,h3,table,tr,td,ul,li,ol{
-	margin:0;
-	padding:0;
-}
-.mainbox{
-	display: -webkit-box;
-	display: box;
-	padding-top:50px;
-	min-height:100%;
-	box-sizing:border-box;
-}
-.pagebox{
-	-webkit-box-flex:1;
-	box-flex:1;
-	background-color:#f0f0f2;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b6b6ba;
+    height: 50px;
+    width: 100%;
 }
 
-.pagepreview{
-	width:450px;
+html,
+body {
+    height: 100%;
 }
-.actionbox{
-	-webkit-box-flex:1;
-	box-flex:1;
-	background-color:#f0f0f2;
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+table,
+tr,
+td,
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
 }
+
+.mainbox {
+    display: -webkit-box;
+    display: box;
+    padding-top: 50px;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.pagebox {
+    width: 300px;
+    background-color: #f0f0f2;
+}
+
+.pagebox ol {
+    margin-left: 45px;
+}
+.pagebox ol li{
+	margin-bottom:20px;
+}
+.pagepreview {
+    width: 600px;
+}
+
+.actionbox {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    background-color: #f0f0f2;
+}
+
+.phone {
+    width: 320px;
+    margin: 0 auto;
+}
+
 .phone >img {
-	width:320px;
+    width: 320px;
 }
-.phonecon{
-	width:320px;
-	height:568px;
-	background-color:red;
+
+.phonecon {
+    width: 320px;
+    height: 568px;
+    background-color: red;
 }
