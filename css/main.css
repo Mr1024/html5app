@@ -20,6 +20,10 @@ ol {
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 body > header {
     position: fixed;
     top: 0;
@@ -32,6 +36,11 @@ body > header {
     box-align: center;
     -webkit-box-pack: center;
     box-pack: center;
+}
+
+select,
+input {
+    outline: none;
 }
 
 .pageCommbox {
@@ -186,7 +195,7 @@ body > header {
 .styletitle {
     height: 20px;
     margin: 10px 0;
-    padding: 8px 15px;
+    padding: 8px 15px 8px 20px;
     position: relative;
 }
 
@@ -200,7 +209,21 @@ body > header {
     background-color: #fff;
     border-radius: 10px;
 }
-
+.styletitle:before{
+    content:"▼";
+    display: block;
+    position: absolute;
+    left:0;
+    top:8px;
+    transition:transform 0.5s ease;
+    -webkit-transition:-webkit-transform 0.5s ease;
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}
+.styletitle.sel:before{
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+}
 .styletitle .styleprview.nostyle:before {
     display: block;
     content: '';
@@ -210,6 +233,38 @@ body > header {
     transform: translate(0px, 17px) rotate(-18deg);
 }
 
+.styleactionbox {
+    padding: 15px;
+    display: none;
+}
+
+.styleactionbox ul li {
+    border-bottom: solid 1px #d0d0d3;
+}
+
+.styleactionbox select {
+    width: 370px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.subfillaction {
+    margin: 15px;
+}
+
+.subfillaction input[type="color"] {
+    border: none;
+    padding: 0;
+    width: 50px;
+}
+
+.subfillaction input[type="file"] {
+    display: none;
+}
+.textactionbox{
+    padding:15px;
+}
 @font-face {
     font-family: 'iconfont';
     src: url('http://at.alicdn.com/t/font_1428848946_7485251.eot');
